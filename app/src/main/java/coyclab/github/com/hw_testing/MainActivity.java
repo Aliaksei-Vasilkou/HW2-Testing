@@ -55,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(final View  pView) {
-                Intent converterActivity = new Intent(MainActivity.this, ConverterActivity.class);
-                startActivity(converterActivity);
+                startActivity(new Intent(MainActivity.this, ConverterActivity.class));
             }
         });
 
