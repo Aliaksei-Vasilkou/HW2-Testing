@@ -2,24 +2,19 @@ package coyclab.github.com.hw_testing;
 
 class Calculator implements ICalculator {
 
-    private int result;
-
     @Override
     public String addition(final int x, final int y) {
-        result = x + y;
-        return formatter(result);
+        return formatter(x + y);
     }
 
     @Override
     public String subtraction(final int x, final int y) {
-        result = x - y;
-        return formatter(result);
+        return formatter(x - y);
     }
 
     @Override
     public String multiplication(final int x, final int y) {
-        result = x * y;
-        return formatter(result);
+        return formatter(x * y);
     }
 
     @Override

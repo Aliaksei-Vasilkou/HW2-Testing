@@ -6,4 +6,5 @@
     <string name="sub_name">-</string>
     <string name="second_activity">Test activity</string>
     <string name="next_activity">next ></string>
+    <string name="result">Result: </string>
 </resources>
