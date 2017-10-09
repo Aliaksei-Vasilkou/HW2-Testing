@@ -14,12 +14,14 @@
         android:layout_marginTop="16dp">
 
         <EditText
+            android:id="@+id/first_number_edit_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:drawable/editbox_background"/>
 
         <EditText
+            android:id="@+id/second_number_edit_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -70,14 +72,16 @@
         android:id="@+id/result_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/next_activity"
@@ -86,6 +90,7 @@
             tools:layout_constraintLeft_creator="1"
             android:layout_marginBottom="8dp"
             android:layout_marginRight="8dp"
+            android:enabled="false"
             app:layout_constraintRight_toRightOf="parent"/>
     </android.support.constraint.ConstraintLayout>
 

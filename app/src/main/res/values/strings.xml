@@ -4,6 +4,10 @@
     <string name="mul_name">x</string>
     <string name="div_name">/</string>
     <string name="sub_name">-</string>
-    <string name="second_activity">Test activity</string>
+    <string name="second_activity_text_view">Test activity</string>
+    <string name="second_activity_button">Convert</string>
     <string name="next_activity">next ></string>
+    <string name="result">Result: </string>
+    <string name="first_activity_title">Simple calculator</string>
+    <string name="second_activity_title">Unit converter</string>
 </resources>
