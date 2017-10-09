@@ -43,7 +43,7 @@ public class MainActivityTest {
     }
 
     @Test
-    public void isNextButtonPresent(){
+    public void isNextButtonPresent() {
         onView(withId(R.id.next_button)).check(matches(isDisplayed())).check(matches(withText("next >")));
     }
 }

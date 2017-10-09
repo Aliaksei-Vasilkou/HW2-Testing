@@ -14,12 +14,12 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
-@Config(constants = BuildConfig.class, manifest = "src/main/AndroidManifest.xml")
+@Config(constants = BuildConfig.class)
 public class ConverterActivityTest {
 
     private Button convertButton;
     private TextView testTextView;
-    ConverterActivity mActivity;
+    private ConverterActivity mActivity;
 
     @Before
     public void setUp() throws Exception {
@@ -39,8 +39,13 @@ public class ConverterActivityTest {
     }
 
     @Test
-    public void isTextViewTextCorrect(){
+    public void isTextViewTextCorrect() {
         assertTrue(testTextView.getText().toString().equals("Test activity"));
+    }
+
+    @Test
+    public void isConvertButtonDisplay() {
+        assertNotNull(convertButton.getText());
     }
 
 }
